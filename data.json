@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Nettimele",
+    "author": "Mohan Sithara, K.J. Yesudas, K.S. Chithra",
+    "composer": "Mohan Sithara",
+    "src": "audio/Nettimele_Pottittaalum.mp3",
+    "img": "images/netimele.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Haule Haule",
+    "author": "Salim-Sulaiman, Sukhwinder Singh, Jaideep Sahni",
+    "composer": "Salim-Sulaiman",
+    "src": "audio/Haule_Haule.mp3",
+    "img": "images/haule.webp"
+  },
+  {
+    "id": 3,
+    "name": "Peelings",
+    "author": "Shankarr Babu Kandukoori, Laxmi Dasa, Devi Sri Prasad, Chandra Bose",
+    "composer": "Devi Sri Prasad",
+    "src": "audio/Peelings.mp3",
+    "img": "images/peelings.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Marikolunthu",
+    "author": "Kalabhavan Mani, M Jayachandran",
+    "composer": "Kalabhavan Mani",
+    "src": "audio/Marikolunthu.mp3",
+    "img": "images/maarikolanthu.webp"
+  },
+  {
+    "id": 5,
+    "name": "Monica",
+    "author": "Anirudh Ravichander, Sublahshini, Asal Kolaar, Vishnu Edavan",
+    "composer": "Anirudh Ravichander",
+    "src": "audio/Monica.mp3",
+    "img": "images/monica.avif"
+  },
+  {
+    "id": 6,
+    "name": "Starboy_X_Prayam_Nammil",
+    "author": "Prakash Mathew From Niram, Untold Story",
+    "composer": "Abel Tesfaye,Guy-Manuel de Homem-Christo",
+    "src": "audio/Starboy_X_Prayam_Nammil.mp3",
+    "img": "images/prayam_namme.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Nenjileri Theeye",
+    "author": "Dileep Arun, Gopy, Mulakkuppadam Films",
+    "composer": "Dileep Arun",
+    "src": "audio/Ramaleela.mp3",
+    "img": "images/ramaleela.webp"
+  },
+  {
+    "id": 8,
+    "name": "LEO_Badass_Lyrics",
+    "author": "Thalapathy Vijay, Lokesh Kanagaraj, Anirudh Ravichander",
+    "composer": "Anirudh Ravichander",
+    "src": "audio/leo.mp3",
+    "img": "images/leo.webp"
+  }
+]
