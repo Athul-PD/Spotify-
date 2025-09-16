@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css folder/header.css">
+    <link rel="stylesheet" href="css folder/main.css">
+    <link rel="stylesheet" href="css folder/footer.css">
+    <link rel="stylesheet" href="css folder/mediaQ.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+    <!-- Left -->
+    <div class="left_section_header" aria-label="Navigation controls">
+      <div class="horizontal_dots" title="More">
+        <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>
+      </div>
+      <div class="arrows_left_right" role="group" aria-label="History navigation">
+        <i class="go_back fa-solid fa-angle-left" aria-label="Back"></i>
+        <i class="fa-solid fa-angle-right" aria-label="Forward"></i>
+      </div>
+    </div>
+
+    <!-- Middle -->
+    <div class="middle_section_header">
+    <div class="home_icon" role="button" aria-label="Home">
+      <div class="home">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        <span class="home_modal">Home</span>
+      </div>
+    </div>
+
+    <div class="input_div">
+      <div class="search_icon" aria-hidden="true">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="search_modal">Search</span>
+        </div>
+      </div>
+
+        <input
+        type="text"
+        id="spotifyInput"
+        class="search_bar"
+        placeholder="What do you want to play?"
+        aria-label="Search"
+      />
+
+      <div class="pipe_icon" aria-hidden="true"></div>
+
+      <div class="browse_icon" role="button" aria-label="Browse">
+        <div class="browse_div">
+          <i class="fa-solid fa-briefcase"></i>
+          <span class="browse_modal">Browse</span>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <!-- Right -->
+  <div class="right_section_header">
+    <button aria-label="Explore Premium">Explore Premium</button>
+
+   <div class="bell_icon" role="button" aria-label="Notifications">
+      <i class="fa-regular fa-bell"></i>
+      <span class="bell_modal">What's New</span>
+    </div>
+
+    <div class="contact_icon" role="button" aria-label="Friend Activity">
+      <i class="fa-solid fa-people-group"></i>
+      <span class="contact_modal">Friend Activity</span>
+    </div>
+
+    <div class="user_bg" aria-label="User Avatar"><p>A</p></div>
+  </div>
+  </header>
+  <!-- ............Main section............. -->
+  <main class="main">
+    <aside class="aside left_section_main">
+
+      <div class="library_icon" aria-label="customize libraryIcon">
+        <div class="libraryDiv">
+          <div class="first_two_row">
+            <div class="col_1"></div>
+            <div class="col_1"></div>
+          </div>
+          <div class="second_last_row">
+            <div class="col_1"></div>
+            <div class="col_2"></div>
+            <div class="row_1"></div>
+            <div class="row_2"></div>
+          </div>
+        </div>
+
+        <div class="library-icon_modal">
+          <span class="library-icon">
+            Open Your Library
+          </span>
+        </div>
+      </div>
+
+      <div class="add_icon">
+        <div class="add_icon_div">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+
+      <div class="likes_icon">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-3-3.webp" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-2-2.webp" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-1-1.webp" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-4.jpeg" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-5.jpeg" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-6.jpeg" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-7.jpeg" alt="monica">
+        </div>
+      </div>
+      <div class="songs_collections">
+        <div class="image_section">
+          <img class="image" src="../Spotify/images/random-8.jpeg" alt="monica">
+        </div>
+      </div>
+    </aside>
+
+    <section class="main_section">
+
+      <nav class="navigation">
+        <ul>
+          <li tabindex="0">All</li>
+          <li tabindex="0">Music</li>
+          <li tabindex="0">Podcasts</li>
+        </ul>
+      </nav>
+
+      <div class="folder_section_container">
+      <div class="folder_sections likedSongs">
+        <div class="folders">
+      <div class="likes_icon likedsongs_sec">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+          <p>Liked songs</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/mollywood.jpeg" alt="netimele">
+          <p>Mollywood Gold</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/peelings.jpg" alt="netimele">
+          <p>Night Kuthu Vibes</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/pani.webp" alt="netimele">
+          <p>Pani bgm</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/hindi dj.jpg" alt="hindi dj">
+          <p>Top Hindi DJ Party songs</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/2025 dj.jpeg" alt="Dj 2025">
+          <p>DJ Music 2025</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/villian.webp" alt="villian bgm">
+          <p>Villian Themes/BGM</p>
+        </div>
+      </div>
+      <div class="folder_sections">
+        <div class="folders">
+          <img class="folder_img" src="../Spotify/images/MM.webp" alt="mollywood">
+          <p>Malayalam Melodies</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="hero_name_part">
+        <p>Made for</p>
+        <div class="name">
+          <h3>Anandu</h3>
+          <button>Show all</button>
+        </div>
+      </div>
+
+      <div class="made_for_you_wrapper">
+
+        <div class="slider_controls">
+          <button class="prevBtn prev">&#10094</button>
+          <button class="nextBtn next">&#10095</button>
+        </div>
+        <div class="made_for_you">
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer1.webp" alt="dailymix-01">
+            <p>Vidyasagar,Sushin Shyam,Alex Paul an</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer2.webp" alt="dailymix-01">
+            <p>A.R Rahman,Harris Jayaraj,Anurid</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer3.jpg" alt="dailymix-01">
+            <p>Heshan Abdul Wahab,Palae Frank</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer4.webp" alt="dailymix-01">
+            <p>Avey's Ambient and Soothing Oasi</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer5.jpeg" alt="dailymix-01">
+            <p>M.G Sreekumar,M Jayachandra</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer6.webp" alt="dailymix-01">
+            <p>Vishnu Vijay,Gopi sundar,Amri</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer7.jpg" alt="dailymix-01">
+            <p>Catch all the latest Music from artist T</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/singer8.jpg" alt="dailymix-01">
+            <p>Your Shortcut to hidden gems ,Dee</p>
+          </div>
+        </div>
+        <h3 class="jump_back_in">Jump back in</h3>
+      </div>
+      <div class="made_for_you_wrapper_2">
+
+        <div class="slider_controls">
+          <button class="prevBtn prev">&#10094</button>
+          <button class="nextBtn next">&#10095</button>
+        </div>
+        <div class="made_for_you">
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-1.webp" alt="dailymix-01">
+            <p>Premalu Movie,Neslen,Mamtha.. </p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-2.webp" alt="dailymix-01">
+            <p>Premasuuthram Movie Romatic Song</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-3.jpg" alt="dailymix-01">
+            <p>New Mollywood Movies Song</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-4.jpg" alt="dailymix-01">
+            <p>Kumbalanji Nights Movie Song</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-5.webp" alt="dailymix-01">
+            <p>Fahad Fazil,Aiswarya Lakshmi ,Varatha</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-6.webp" alt="dailymix-01">
+            <p>Nivin Pauly Movie Muuthon All Song</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-7.jpg" alt="dailymix-01">
+            <p>dulquer Salman Movie second Show Song</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/jb-8.webp" alt="dailymix-01">
+            <p>Jump Back In Your Favourite Song</p>
+          </div>
+        </div>
+        <h3 class="jump_back_in">Recently Played</h3>
+      </div>
+      <div class="made_for_you_wrapper_3">
+
+        <div class="slider_controls">
+          <button class="prevBtn prev">&#10094</button>
+          <button class="nextBtn next">&#10095</button>
+        </div>
+        <div class="made_for_you">
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/villian.webp" alt="dailymix-01">
+            <p>Villian themes/BGM</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/peelings.jpg" alt="dailymix-01">
+            <p>PNight Kuthu Vibes</p>
+          </div>
+          <div class="slider_1">
+          <div class="likes_icon likedsongs_sec slider_img">
+            <i style="font-size: 2.5rem;" class="fa-solid fa-heart"></i>
+          </div>
+            <p>Liked Songs</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/hindi dj.jpg" alt="dailymix-01">
+            <p>Top Hindi DJ Party Songs</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/2025 dj.jpeg" alt="dailymix-01">
+            <p>DJ Music 2025</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/pani.webp" alt="dailymix-01">
+            <p>Pani bgm</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/MM.webp" alt="dailymix-01">
+            <p>Malayalam Melodies</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/mollywood.jpeg" alt="dailymix-01">
+            <p>Mollywood Gold</p>
+          </div>
+        </div>
+        <h3 class="jump_back_in">More of what you like</h3>
+      </div>
+      <div class="made_for_you_wrapper_4">
+
+        <div class="slider_controls">
+          <button class="prevBtn prev">&#10094</button>
+          <button class="nextBtn next">&#10095</button>
+        </div>
+        <div class="made_for_you">
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp4-1.webp" alt="dailymix-01">
+            <p>Top Trending Tamil songs on Socia</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-2.webp" alt="dailymix-01">
+            <p>Tune into the Hottest tracks of Kollywood!..</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-3.webp" alt="dailymix-01">
+            <p>Trending songs from Tollywood!Cover OG..</p>
+          </div>
+            <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-8.jpeg" alt="dailymix-01">
+            <p>every song that's Trending NOW from..</p>
+          </div>
+            <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-7.jpeg" alt="dailymix-01">
+            <p>Catch the hottest Malayalam tracks..</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-4.webp" alt="dailymix-01">
+            <p>Catch the latest songs from Malayalam</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-5.webp" alt="dailymix-01">
+            <p>New Music from Kollywood Cover:..</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/wp-4-6.jpeg" alt="dailymix-01">
+            <p>Tune for the hottest Kollywood lates</p>
+          </div>
+        </div>
+        <h3 class="jump_back_in">Chill</h3>
+      </div>
+      <div class="made_for_you_wrapper_5">
+
+        <div class="slider_controls">
+          <button class="prevBtn prev">&#10094</button>
+          <button class="nextBtn next">&#10095</button>
+        </div>
+        <div class="made_for_you">
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-1.jpeg" alt="dailymix-01">
+            <p>For the times you need to me just play this </p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-2.jpeg" alt="dailymix-01">
+            <p>Mellow down the mood with me</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-3.jpeg" alt="dailymix-01">
+            <p>La relvee to Limitted, the love.</p>
+          </div>
+            <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-4.jpeg" alt="dailymix-01">
+            <p>A cup of tea saved with some rolvo..</p>
+          </div>
+            <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-5.jpeg" alt="dailymix-01">
+            <p>If you are enjoy the rain.here is the pla..</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-6.jpeg" alt="dailymix-01">
+            <p>The most streamed songs od 2024 in Tamil</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-7.jpeg" alt="dailymix-01">
+            <p>Best love songs , Botton anything els</p>
+          </div>
+          <div class="slider_1">
+            <img class="slider_img" src="../Spotify/images/chill-8.jpeg" alt="dailymix-01">
+            <p>A blend of best Malayalam and Tamil..</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video_sections">
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-1.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/6193851/pexels-photo-6193851.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>GABRI Radio</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-2.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>18 FEARS MIX</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-3.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/9009598/pexels-photo-9009598.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>Melody mix</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-4.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/8043851/pexels-photo-8043851.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>Listen Premium spotify</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-5.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/8412337/pexels-photo-8412337.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>GABRI Radio</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-6.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/30397932/pexels-photo-30397932.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>Romantic playlists</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-7.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/28288397/pexels-photo-28288397.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>Step with me</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+        <div class="video_box">
+          <video class="video" src="../Spotify/videos/video-8.mp4"
+          muted
+          loop></video>
+          <div class="video_details">
+            <img src="https://images.pexels.com/photos/30826346/pexels-photo-30826346.jpeg" alt="preview-img">
+            <div class="video_name">
+              <h3>Dj 2025</h3>
+              <p>Playlist spotify</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="right_section">
+      <div class="song_name_header">
+        <i class="fa-solid fa-music"></i>
+        <p class="current_songNAme">song Name</p>
+        <i class="fa-solid fa-ellipsis"></i>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+      <div class="right_sec_image">
+        <img class="current_song_img" src="../Spotify/images/wp-4-2.webp" alt="">
+      </div>
+      <div class="name_below">
+        <h3 class="current_songNAme">SongName nee</h3>
+        <p class="current_song_author">Vijay Yesudas,Thulasi Yathea</p>
+      </div>
+
+      <div class="credits">
+        <div class="head">
+          <p>Credits</p>
+          <p>Show all</p>
+        </div>
+        <div class="artists">
+          <div class="mainArtists">
+            <p class="current_song_author">Name</p>
+            <p id="main_artist">Main Artist</p>
+          </div>
+          <div class="composer">
+            <p class="composerClass">Name</p>
+            <p id="composer">Composer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="next-in-que">
+        <div class="next-in-que-header">
+          <p>Next in queue</p>
+          <p id="Open_queue">Open queue</p>
+        </div>
+        <div class="img_song_name">
+          <img class="queue_img" src="../Spotify/images/wp-4-3.webp" alt="image">
+          <div class="details">
+            <p class="details_name queue_name">Name</p>
+            <p class="details_author queue_author">Author name</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!--............Footer................ -->
+  <footer class="footer">
+
+    <div class="which_song_playing">
+      <img class="current_song_img" src="../Spotify/images/wp-4-4.webp" alt="music">
+      <div class="song_details_footer">
+        <p class="current_songNAme">Song Name</p>
+        <span class="current_song_author">Song Author</span>
+      </div>
+    </div>
+
+    <div class="play-pause_section">
+      <div class="play_pause">
+        <i class="fa-solid fa-shuffle i"></i>
+        <span id="previousMusic">⏮</span>
+        <i id="play" class="fa-solid fa-play pp"></i>
+        <i id="pause" class="fa-solid fa-pause pp"></i>
+        <span id="nextMusic">⏭</span>
+        <i class="fa-regular fa-message i"></i>
+      </div>
+
+      <div class="progress_bar_section">
+        <div class="time_details">
+          <div class="add_hide_music">
+            <i class="fa-solid fa-plus add_playlist"></i>
+            <i class="fa-solid fa-minus hide_music hideSong"></i>
+          </div>
+          <span class="currentTimeofSong">0:00</span>
+          <input class="progress_bar" type="range" min="0" max="100" value="0">
+          <span class="tottalDurationOfSong">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right_volume_section">
+      <div class="volume_icons_div">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-laptop-file"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input type="range">
+        <i class="fa-solid fa-expand"></i>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="audio" src=""></audio>
+</body>
+</html>
