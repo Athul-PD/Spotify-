@@ -1,0 +1,299 @@
+/* Variables  */
+
+:root{
+    --bg-page: #000000;
+    --bg-header: #000000;
+    --header-el-bg-color: #1F1F1F;
+    --icons-color: #b9b6b6;
+    --hover-color: #a7a7a7;
+    --input-hover: rgba(107,104,104,0.5);
+    --text: #ffffff;
+    --tooltip-bg: #1F1F1F;
+    --avatar-bg: rgba(231, 130, 63, 0.6);
+    --radius-pill: 999px;
+    --space-1: 6px;
+    --space-2: 10px;
+    --space-3: 16px;
+    --space-4: 22px;
+}
+
+/* Initial setup for css */
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3{
+    margin: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-page);
+    color: var(--text);
+}
+
+/* Header goes here... */
+.header{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-1) var(--space-4);
+    height: 64px;
+    background: var(--bg-header);
+    z-index: 100;
+}
+.left_section_header,
+.right_section_header{
+    display: flex;
+    align-items: center;
+}
+/* Left section header */
+.left_section_header{ 
+    justify-self: start; 
+    gap: 1rem; 
+}
+.arrows_left_right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.left_section_header i{
+    font-size: 1.5rem;
+}
+.left_section_header .fa-angle-left,
+.fa-angle-right{
+    color: var(--header-el-bg-color);
+}
+
+/* Middle section goes here... */
+.middle_section_header{
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-self: center;
+    }
+.home_icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background-color: var(--header-el-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 55px;
+}
+.home_icon i{
+    font-size: 1.4rem;
+    color: var(--icons-color);
+    transition: color .2s ease;
+}
+.home_icon:hover i{
+    color: white;
+}
+.home_modal{
+    position: absolute;
+    bottom: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    white-space: nowrap;
+    background-color: var(--tooltip-bg);
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    font-size: .85rem;
+}
+.home_icon:hover .home_modal{
+    opacity: 1;
+    visibility: visible;
+}
+/* Input Section of header */
+.input_div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: clamp(180px, 50vw, 530px);
+    gap: 0;
+}
+.search_bar{
+    width: 100%;
+    height: 48px;
+    border-radius: var(--radius-pill);
+    border: none;
+    outline: none;
+    background: var(--header-el-bg-color);
+    transition: background .2s ease-in-out;
+    padding-left: 48px; 
+    padding-right: 72px;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+.search_bar:hover{
+    background-color: var(--input-hover);
+}
+.search_bar::placeholder{
+    color: var(--hover-color);
+    font-size: 0.9rem;
+}
+
+.search_icon{
+    position: absolute;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--icons-color);
+}
+.search{
+    position: relative;
+}
+.search_modal{
+    position: absolute;
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: var(--tooltip-bg);
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: .2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    font-size: .85rem;
+}
+.search_icon:hover .search_modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pipe_icon{
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 22px;
+    background-color: var(--icons-color);
+    opacity: .8;
+    pointer-events: none;
+}
+.browse_icon{
+    position: absolute;
+    color: var(--icons-color);
+    right: 14px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .2s ease;
+}
+.browse_icon:hover{
+    color: white;
+}
+.browse_div{
+    position: relative;
+}
+.browse_modal{
+    position: absolute;
+    font-size: .85rem;
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: var(--tooltip-bg);
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+}  
+.browse_icon:hover .browse_modal{
+    visibility: visible;
+    opacity: 1;
+}
+/* Right section goes here... */
+.right_section_header{
+    justify-self: end;
+    gap: 15px;
+}
+.right_section_header button{
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.right_section_header button:hover{
+    filter: brightness(0.92);
+}
+.bell_icon,
+.contact_icon{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icons-color);
+    font-size: 1.1rem;
+    transition: color .2s ease;
+    cursor: pointer;
+}
+.bell_icon:hover,
+.contact_icon:hover{ color: #fff; }
+
+.bell_modal,
+.contact_modal{
+    position: absolute;
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 10px;
+    background-color: var(--tooltip-bg);
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: .2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    font-size: .85rem;
+}
+.bell_icon:hover .bell_modal,
+.contact_icon:hover .contact_modal{
+    visibility: visible;
+    opacity: 1;
+}
+.user_bg{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--avatar-bg);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    user-select: none;
+}
