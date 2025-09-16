@@ -1,0 +1,275 @@
+    @media (min-width: 1225px){
+      .input_div{
+         width: clamp(160px, 48vw, 480px); 
+        }
+        .main{
+          height: 100vh;          grid-template-columns: 70px auto auto;
+          grid-template-areas: 
+          'header header header'
+          'aside main_section right_section'
+          'aside main_section right_section';
+        }
+        .main_section{
+          height: 100vh;
+          width: 100%;
+        }
+        .aside{
+          height: 100vh;
+        }
+        .right_section{
+          height: 100vh;
+        }
+        .folder_section_container{
+          grid-template-columns: repeat(3,1fr);
+        }        
+        .folder_sections{
+          width: 100%;
+        }
+        .slider_1{
+          min-width: calc(100% / 5.8);
+          display: flex;
+          flex-direction: column;
+        }
+        .video_sections{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          column-gap: 1rem;
+          row-gap: 1.5rem;
+          margin-top: 50px;
+        }
+        .footer{
+          width: 100%;
+          background-color: black;
+        }
+    }
+    
+    @media (max-width: 1224px){
+      .input_div{
+         width: clamp(160px, 48vw, 480px); 
+        }
+        .main{
+          width: 100%;
+          padding: 20px;
+          grid-template-columns: auto auto;
+          grid-template-areas: 
+          'header header header'
+          'main_section right_section'
+          'main_section right_section';
+        }
+        .right_section{
+          height: 100vh;
+        }
+        .aside{
+          display: none;
+        }
+        .main_section{
+          height: 100vh;
+          padding: 12px 18px;
+          width: 100%;
+        }
+        .main_section::-webkit-scrollbar{
+          display: none;
+        }
+        .folder_section_container{
+          grid-template-columns: repeat(2,1fr);
+        }        
+        .folder_sections{
+          width: 100%;
+        }
+        .slider_1{
+          min-width: calc(100% / 3);
+          display: flex;
+          flex-direction: column;
+        }
+        .video_sections{
+          display: grid;
+          grid-template-columns: 1fr;
+          column-gap: 1rem;
+          row-gap: 1.5rem;
+          margin-top: 50px;
+        }
+        .right_volume_section {
+          display: none;
+        }
+    }
+    @media(max-width: 768px){
+      html,body{
+        height: auto;
+        overflow-y: auto;
+      }
+        .header{
+          display: none;
+        }
+        .main{
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+        .right_section{
+          order: 2;
+          width: 100%;
+          height: auto;
+        }
+        .aside{
+          display: none;
+        }
+        .main_section{
+          order: 1;
+          width: 100%;
+          height: auto;
+          padding: 10px 12px;
+        }
+        .main_section::-webkit-scrollbar{
+          width: 0;
+          display: none;
+        }
+        .folder_section_container{
+          grid-template-columns: repeat(2,1fr);
+        }
+        .folder_sections{
+          width: 100%;
+        }
+        .slider_1{
+          min-width: calc(100% / 3.8);
+          display: flex;
+          flex-direction: column;
+        }
+        .video_sections{
+          display: grid;
+          grid-template-columns: 1fr;
+          column-gap: 1rem;
+          row-gap: 1.5rem;
+          margin-top: 50px;
+        }
+        .video_box{
+          height: 250px;
+        }
+        .video_details img{
+          width: 60px;
+          height: 50px;
+        }
+        .video_name h3{
+          font-size: 1rem;
+        }
+        .video_name p{
+          font-size: 0.6rem;
+        }
+        .right_volume_section {
+          display: none;
+        }
+            .footer {
+              position: fixed;
+              display: flex;
+              align-items: center;
+              margin-bottom: 20px;
+              background-color: black;
+              height: 70px;
+              border-radius: 8px;
+              padding: 5px;
+            }
+    }
+    @media (max-width: 560px){
+      .header{
+        display: none;
+      }
+      /* Footer */
+      .footer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        display: flex;
+        background-color: rgb(31, 31, 31);
+        height: 70px;
+        border-radius: 8px;
+        padding: 5px;
+      }
+      .which_song_playing{
+        width: 100px;
+      }
+      .which_song_playing img{
+        width: 35px;
+        height: 30px;
+        gap: 0.2rem;
+      }
+      .current_songNAme,
+      .current_song_author{
+        width: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .song_details_footer p{
+        font-size: 0.7rem;
+      }
+      .song_details_footer span{
+        font-size: 0.6rem;
+      }
+      .add_hide_music{
+        left: 220px;
+        top: -15px;
+      }
+      .tottalDurationOfSong,
+      .currentTimeofSong{
+        font-size: 0.8rem;
+      }
+      .play_pause .i{
+        display: none;
+      }
+      .play_pause .pp{
+        padding: 6px 12px;
+        font-size: 0.7rem;
+      }
+      .play_pause span{
+        font-size: 1.4rem;
+      }
+      .progress_bar{
+        width: 100%;
+      }
+      /* Footer ends here */
+      .left_section_main{
+        display: none;
+      }
+      .right_section{
+        display: none;
+      }
+      .main_section{
+        width: 100%;
+        background: #000000;
+        padding: 0;
+        height: 100vh;
+      }
+      .main{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .main_section::-webkit-scrollbar {
+        width: 0;
+        display: none;
+      }
+      .slider_1 {
+        min-width: calc(100% / 2.8);
+        display: flex;
+      }
+      .right_volume_section{
+        display: none;
+      }
+      .folder_sections{
+        width: 100%;
+      }
+      .made_for_you {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        transition: 0.5s ease;
+      }
+      .next,.prev{
+        display: none;
+      }
+      .video_sections{
+        margin-bottom: 80px;
+      }
+  }
