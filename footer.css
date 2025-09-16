@@ -1,0 +1,141 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 12px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+    place-items: center;
+}
+.which_song_playing{
+    max-width: 170px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.which_song_playing img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.song_details_footer{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.song_details_footer p{
+    white-space: nowrap;
+    font-size: 1rem;
+}
+.song_details_footer span{
+    white-space: nowrap;
+    font-size: 0.8rem;
+    color: var(--icons-color);
+}
+/* Middle section */
+.play-pause_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.play_pause{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.play_pause .i{
+    color: gray;
+    font-size: 0.9rem;
+}
+.play_pause .pp{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 100%;
+    font-size: 0.9rem;
+    color: black;
+}
+#pause{
+    display: none;
+}
+.play_pause span{
+    font-size: 1.8rem;
+}
+.progress_bar_section{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.progress_bar{
+    width: clamp(150px,50vw,550px);
+    -webkit-appearance: none;
+    height: 3px;
+    outline: none;
+    background: linear-gradient(to rigth,white 0%, white 50%, gray 50%, gray 100%);
+}
+.progress_bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.time_details{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.currentTimeofSong,
+.tottalDurationOfSong{
+    display: block;
+    color: var(--icons-color);
+}
+/* Right Section */
+.right_volume_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.volume_icons_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.volume_icons_div i{
+    color: var(--icons-color);
+}
+.volume_icons_div input{
+    height: 4px;
+    width: 100px;
+    border-radius: 8px;
+}
+.add_hide_music{
+    left: -70px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 10px;
+    font-size: 0.5rem;
+}
+.add_hide_music i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: var(--icons-color);
+}
+/* toggle css for add music to playList */
+.add_hide_music .addMusic{
+    background-color: green;
+    color: white;
+    border: none;
+}
